@@ -6,7 +6,8 @@ I build resilient, secure, and cost-optimized cloud infrastructure. My work focu
 * 📍 Karachi, Pakistan
 * 💼 DevOps / Cloud Engineer & COO at **HashX** | DevOps / Cloud Engineer at **Al-Nafi**
 * 🎓 BS in Information Technology — The University of Faisalabad
-* 📬 Reach me at: [qadeeraslam888@gmail.com](mailto:qadeeraslam888@gmail.com) | [LinkedIn](https://linkedin.com/in/qadeer-aslam)
+* 📬 Reach me at: [qadeeraslam888@gmail.com](mailto:qadeeraslam888@gmail.com) | [LinkedIn](https://linkedin.com/in/qadeer-aslam-devops)
+* 📄 **Resume:** [![Download Resume](https://img.shields.io/badge/Resume-Download_DevOps_PDF-007ACC?style=flat-square&logo=adobeacrobatreader&logoColor=white)](./Qadeer_Aslam_DevOps_Resume.pdf)
 
 ---
 
