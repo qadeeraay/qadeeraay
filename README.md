@@ -3,7 +3,7 @@
 
 I design, build, and operate resilient, secure, and observable cloud platforms. My focus is on **production Kubernetes, GitOps continuous delivery, zero-trust infrastructure, and automated platform reliability**. I write custom Kubernetes controllers and automation in Python to eliminate operational bottlenecks and treat infrastructure with software engineering rigor.
 
-📍 **Karachi, Pakistan** · 💼 **DevOps / Platform Engineer & COO at HashX** · 🎓 **BS in Information Technology**  
+📍 **Faisalabad, Pakistan** · 💼 **DevOps / Cloud Engineer at HashX** · 🎓 **BS in Information Technology**  
 📬 **Contact:** [qadeeraslam888@gmail.com](mailto:qadeeraslam888@gmail.com) · [LinkedIn](https://linkedin.com/in/qadeer-aslam-devops) · 📄 **[Download Resume (PDF)](./Qadeer_Aslam_DevOps_Resume.pdf)**
 
 ---
