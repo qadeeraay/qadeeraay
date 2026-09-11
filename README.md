@@ -1,5 +1,6 @@
 # Hi, I'm Qadeer Aslam 👋
-### DevOps & Cloud Platform Engineer | SRE & DevSecOps
+
+## DevOps & Cloud Platform Engineer | SRE & DevSecOps
 
 I design and operate reliable, secure, and cost-efficient cloud platforms. My background spans **production Kubernetes, GitOps delivery pipelines, zero-trust secrets management, and automated platform reliability**. Beyond infrastructure automation, I build high-throughput backend services and custom Kubernetes controllers in Python, bridging the gap between infrastructure operations and software engineering.
 
@@ -51,4 +52,3 @@ Engineering high-throughput, low-latency microservices with native telemetry and
 1. **Production Parity in Code:** Infrastructure and platform tooling should follow the same software engineering standards as customer-facing applications: modular code, targeted error handling, and robust test suites.
 2. **Deterministic Automation:** If an operational procedure is performed more than once, automate it via Terraform, Ansible, or custom Kubernetes controllers.
 3. **Actionable Observability:** Alerts must be symptom-based and tied directly to user-impacting SLOs, avoiding alert fatigue and reducing MTTR.
-
