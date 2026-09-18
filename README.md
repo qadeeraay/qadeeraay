@@ -1,7 +1,7 @@
 # Qadeer Aslam
 ### Senior DevOps & Cloud Platform Engineer | SRE & DevSecOps
 
-I design, build, and operate resilient, secure, and observable cloud platforms. My focus is on **production Kubernetes, GitOps continuous delivery, zero-trust infrastructure, and automated platform reliability**. I write custom Kubernetes controllers and automation in Python to eliminate operational bottlenecks and treat infrastructure with software engineering rigor.
+I design, build, and operate resilient, secure, and observable cloud platforms. My focus is on **production Kubernetes, GitOps continuous delivery, zero-trust infrastructure, and automated platform reliability**. I write custom Kubernetes controllers and automation in Go (`client-go`) and Python to eliminate operational bottlenecks and treat infrastructure with software engineering rigor.
 
 📍 **Faisalabad, Pakistan** · 💼 **DevOps / Cloud Engineer at HashX** · 🎓 **BS in Information Technology**  
 📬 **Contact:** [qadeeraslam888@gmail.com](mailto:qadeeraslam888@gmail.com) · [LinkedIn](https://linkedin.com/in/qadeer-aslam-devops) · 📄 **[Download Resume (PDF)](./Qadeer_Aslam_DevOps_Resume.pdf)**
@@ -12,11 +12,11 @@ I design, build, and operate resilient, secure, and observable cloud platforms. 
 
 | Domain | Technologies & Standards |
 | :--- | :--- |
-| **Cloud & Orchestration** | AWS (EKS, VPC, IAM, KMS, S3, CloudWatch), Kubernetes (Custom Controllers, Operators, RBAC, NetworkPolicies), Docker |
+| **Cloud & Orchestration** | Kubernetes (Custom Controllers & Operators via `client-go`, RBAC, NetworkPolicies), AWS (EKS, VPC, IAM, KMS, S3, CloudWatch), Docker |
 | **IaC & GitOps Delivery** | Terraform, Ansible, Helm 3, ArgoCD, Argo Rollouts, GitHub Actions CI/CD |
 | **SRE & Observability** | Prometheus, Grafana, Loki, Alertmanager, Google SRE 4 Golden Signals, Multi-Window SLO Burn-Rate Alerting |
 | **Security & DevSecOps** | HashiCorp Vault, External Secrets Operator (ESO), Kyverno Policy Engine, Checkov, Trivy, CIS Benchmarks (Level 2) |
-| **Automation & Systems** | Python 3.12 (AsyncIO, K8s Informers), Bash / POSIX Shell, PostgreSQL, Redis |
+| **Automation & Systems** | Go 1.22+ (`client-go`, Informers, Workqueues), Python 3.12 (AsyncIO), Bash / POSIX Shell, PostgreSQL, Redis |
 
 ---
 
@@ -37,10 +37,10 @@ Here are my six primary open-source platform implementations, each architected t
 * **Impact & Resilience:** Features multi-window, multi-burn-rate alerting rules (14.4x / 1-hour and 6-hour windows), avoiding transient false positives while instantly paging on catastrophic budget depletion. Correlates metrics directly with Loki logs for sub-minute incident triage.
 
 ### 3. [k8s-aiops-self-healing-operator](https://github.com/qadeeraay/k8s-aiops-self-healing-operator)
-**Autonomous Kubernetes Remediation Controller**
-* **Stack:** Python 3.12, Kubernetes Client / Informers, Prometheus Metrics Engine
-* **Architecture:** Custom Kubernetes controller utilizing an event-driven reconciliation loop to watch cluster events and pod lifecycle state transitions.
-* **Impact & Resilience:** Detects and remediates `CrashLoopBackOff`, out-of-memory states, and orphaned pods in real time, cutting recovery MTTR from 25+ minutes to **under 5 seconds**. Emits real-time Prometheus metrics tracking self-healing throughput.
+**Two-Tier Hybrid Autonomous Kubernetes Remediation Controller**
+* **Stack:** Go 1.22+ (`client-go`), Python 3.12, Kubernetes SharedIndexInformer & Workqueue, Prometheus Metrics Engine
+* **Architecture:** High-performance two-tier hybrid architecture combining a native Go `client-go` core (HTTP/2 watch streams, DeltaFIFO caching, PDB-compliant evictions, thread-safe sliding circuit breaker) with a decoupled Python heuristic policy engine for telemetry triage.
+* **Impact & Resilience:** Detects and remediates `CrashLoopBackOff`, impending OOMKills, and probe failures in real time with zero API polling overhead. Enforces an ironclad blast-radius limit of **1 remediation per workload per 10 minutes** and cuts recovery MTTR from 25+ minutes to **under 3 seconds**.
 
 ### 4. [secure-aws-k8s-compliance-engine](https://github.com/qadeeraay/secure-aws-k8s-compliance-engine)
 **Hardened Cloud Infrastructure as Code & DevSecOps Engine**
